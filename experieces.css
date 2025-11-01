@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0c0c0c, #7ba88d);
+  margin: 0;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  height: fit-content;
+  background-color: rgba(102, 69, 69, 0.2);
+  padding: 1.5%;
+  border-radius: 1.5%;
+  text-align: center;
+}
+
+header,
+nav,
+main,
+footer {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 1% 0;
+  padding: 2%;
+  border-radius: 1.5%;
+  font-weight: bold;
+}
+main {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  height: 100%;
+}
+
+nav {
+  flex: none;
+  height: 250px; 
+  background-image: url(favArt.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+
+.content {
+  flex: 2;
+  background: linear-gradient(to bottom right, rgba(136, 225, 250, 0.7), rgba(255, 255, 255, 0.5));
+  border-radius: 1.5%;
+  padding: 3%;
+  height: 60vh;
+  overflow-y: auto;
+  box-shadow: 0 0.5% 1.5% rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.intro p {
+  font-size: 1rem;
+  color: #222;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1.5%;
+  border-radius: 1%;
+  margin-bottom: 2%;
+  text-align: justify;
+}
+
+.experiences {
+  max-height: 45vh;
+  overflow-y: auto;
+  padding-right: 1.5%;
+  scrollbar-width: thin;
+  scrollbar-color: #8cd6f5 transparent;
+}
+
+
+.experiences::-webkit-scrollbar {
+  width: 0.6%;
+}
+
+.experiences::-webkit-scrollbar-thumb {
+  background-color: rgba(136, 225, 250, 0.9);
+  border-radius: 10px;
+}
+
+.experiences::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 1.5% 0;
+  padding: 1.5%;
+  border-radius: 1.5%;
+  transition: transform 0.3s ease;
+}
+
+.experience:hover {
+  transform: scale(1.02);
+}
+.experience img {
+  width: 25%;
+  min-width: 80px; 
+  max-width: 120px; 
+  height: auto;
+  object-fit: cover;
+  border-radius: 1.5%;
+  margin-right: 2%;
+  border: 0.3vw solid rgba(255, 255, 255, 0.6);
+}
+
+
+.desc {
+  text-align: left;
+}
+
+.desc h3 {
+  margin: 0;
+  color: #003333;
+}
+
+.desc p {
+  margin-top: 1%;
+  color: #000;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 2%;
+  text-decoration: none;
+  color: #000;
+  background-color: rgba(136, 225, 250, 0.8);
+  padding: 1% 2%;
+  border-radius: 1%;
+  transition: 0.3s;
+}
+
+.back:hover {
+  background-color: rgba(136, 225, 250, 1);
+}
+
+
+p {
+  color: black;
+  font-weight: bold;
+}

@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0c0c0c, #7ba88d);
+  margin: 0;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  height: fit-content;
+  background-color: rgba(102, 69, 69, 0.2);
+  padding: 1%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+header,
+nav,
+main,
+footer {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 1% 0;
+  padding: 2%;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  gap: 1%;
+}
+
+nav {
+  flex: 1;
+  background-image: url(favArt.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.content {
+  flex: 2;
+  background: linear-gradient(
+    to bottom right,
+    rgba(136, 225, 250, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 10px;
+  padding: 3%;
+  height: 50vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+/* --- Hobbies Section --- */
+.hobbies {
+  max-height: 40vh;
+  overflow-y: auto;
+  padding-right: 2%;
+  scrollbar-width: thin;
+  scrollbar-color: #8cd6f5 transparent;
+}
+
+.hobbies::-webkit-scrollbar {
+  width: 0.8%;
+}
+
+.hobbies::-webkit-scrollbar-thumb {
+  background-color: rgba(136, 225, 250, 0.9);
+  border-radius: 10px;
+}
+
+.hobbies::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.hobby {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 2% 0;
+  padding: 2%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hobby:hover {
+  transform: scale(1.02);
+}
+
+.hobby img {
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 2%;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+.desc {
+  text-align: left;
+}
+
+.desc h3 {
+  margin: 0;
+  color: #003333;
+}
+
+.desc p {
+  margin-top: 1%;
+  color: #000;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 3%;
+  text-decoration: none;
+  color: #000;
+  background-color: rgba(136, 225, 250, 0.8);
+  padding: 1% 2%;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.back:hover {
+  background-color: rgba(136, 225, 250, 1);
+}
+
+/* Text */
+p {
+  color: black;
+  font-weight: bold;
+}
